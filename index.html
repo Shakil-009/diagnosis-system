@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diagnosis and Appointment System</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="shortcut icon" href="assets/diagnosis.jpg" type="image/x-icon">
+    <style>
+        body{
+            background-image: url(assets/Rare\ Disease\ Image2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: rgb(0, 0, 0,0.5);
+        }
+    </style>
 </head>
 
-<body>
-    <nav class="navbar bg-white fixed">
+<body class="min-h-screen">
+    <nav class="navbar fixed bg-green-500">
         <div class="navbar-start">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -22,10 +30,10 @@
                     </svg>
                 </div>
                 <ul tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    class="menu menu-sm text-white dropdown-content bg-green-500 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                     <li>
                         <a>Appointment</a>
-                        <ul class="p-2">
+                        <ul class="p-2  bg-green-500">
                             <li><a>Doctor</a></li>
                             <li><a>Diagnosis</a></li>
                         </ul>
@@ -41,7 +49,7 @@
                 <li>
                     <details>
                         <summary class="text-black font-bold">Appointment</summary>
-                        <ul class="p-2">
+                        <ul class="p-2 bg-green-500">
                             <li><a>Doctor</a></li>
                             <li><a>Diagnosis</a></li>
                         </ul>
@@ -52,10 +60,27 @@
             </ul>
         </div>
         <div class="navbar-end">
-            <a class="btn rounded-full text-white font-bold">DP</a>
+            <a class="btn rounded-full text-black font-bold">DP</a>
         </div>
     </nav>
-    <img class="w-11/12 mx-auto" src="assets/GettyImages-1484138909.avif" alt="">
+
+    <div class="hero bg-transparent min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="card bg-base-100 w-96 shrink-0 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label">Email</label>
+                <input id="email" type="email" class="input" placeholder="Email" />
+                <label class="fieldset-label">Password</label>
+                <input id="password" type="password" class="input" placeholder="Password" />
+                <div><a class="link link-hover">Forgot password?</a></div>
+                <button class="btn btn-neutral mt-4" onclick="login()">Login</button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/index.js"></script>
 </body>
 
 </html>
