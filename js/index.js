@@ -1,3 +1,5 @@
+document.getElementById("login").classList.add("hidden");
+document.getElementById("signup").classList.add("hidden");
 const login = () => {
     const password = document.getElementById("password").value;
     const email = document.getElementById("email").value;
@@ -20,5 +22,4 @@ const login = () => {
                 alert("Wrong password");
             }
     }
-    
 }
