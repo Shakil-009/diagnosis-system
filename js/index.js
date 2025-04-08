@@ -1,5 +1,7 @@
 document.getElementById("login").classList.add("hidden");
 document.getElementById("signup").classList.add("hidden");
+document.getElementById("backBtn").classList.add("hidden");
+document.getElementById("select").classList.add("hidden");
 const login = () => {
     const password = document.getElementById("password").value;
     const email = document.getElementById("email").value;
