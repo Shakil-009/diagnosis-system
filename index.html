@@ -76,12 +76,11 @@
                 <div class="hero bg-base-200 rounded-2xl">
                       <div class="card bg-slate-300 w-full min-w-sm shrink-0 shadow-2xl">
                         <div class="card-body">
-                            <h1 class="text-center text-2xl font-bold">Using as</h1>
-                            <hr>
                           <fieldset class="fieldset flex flex-row justify-evenly">
                             <a id="signHide" class="btn rounded-full text-black font-bold" onclick="signUp()">Sign up</a>
                             <a id="logHide" class="btn rounded-full text-black font-bold" onclick="logIn()">Log in</a>
                           </fieldset>
+                          <a id="backBtn" class="btn rounded-full text-black font-bold" onclick="rtrn()">back</a>
                         </div>
                       </div>
                   </div>
@@ -93,14 +92,15 @@
                             <h1 class="text-center text-2xl font-bold">Using as</h1>
                             <hr>
                           <fieldset class="fieldset flex flex-row justify-evenly">
-                            <button class="btn btn-soft btn-primary">Admin</button>
+                            <button id="admin-link" class="btn btn-soft btn-primary">Admin</button>
                             <button class="btn btn-soft btn-success" onclick="patient()">Patient</button>
                           </fieldset>
+                          
                         </div>
                       </div>
                   </div>
             </div>
-            <h1 class="text-4xl lg:text-8xl text-center text-black font-bold lg:font-extrabold bg-slate-100 pb-5 opacity-80">Welcome To Diagnosis and Appointment System</h1>
+            <h1 id="wlcmMsg" class="text-4xl lg:text-8xl text-center text-black font-bold lg:font-extrabold bg-slate-100 pb-5 opacity-80">Welcome To Diagnosis and Appointment System</h1>
             
         </div>
 

@@ -29,7 +29,16 @@ const patient = () => {
     document.getElementById("signup").classList.add("hidden");
     document.getElementById("logHide").classList.remove("hidden");
     document.getElementById("log_in").classList.add("hidden");
+    document.getElementById("wlcmMsg").classList.add("hidden");
     document.getElementById("signLogin").classList.add("hidden");
     document.getElementById("select").classList.remove("hidden");
 
 }
+const rtrn = () =>{
+    document.getElementById("wlcmMsg").classList.remove("hidden");
+    document.getElementById("signLogin").classList.remove("hidden");
+    document.getElementById("select").classList.add("hidden");
+}
+document.getElementById('admin-link').addEventListener('click',function (){
+    window.location.href = 'admin.html'
+})
