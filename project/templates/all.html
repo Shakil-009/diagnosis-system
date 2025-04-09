@@ -2,7 +2,7 @@
 {% block body %}
   	{% for item in results %}
   		{% if item != None %}
-        <p>name: {{item[1]}}, price: tk {{item[2]}}</p>
+        <p>name: {{item[1]}}, price: tk {{item[2]}}, clinic_id: {{item[3]}}</p>
         {% endif %}
     {% endfor %}
 {% endblock %}

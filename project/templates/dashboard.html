@@ -28,7 +28,7 @@
                         <a>Appointment</a>
                         <ul class="p-2">
                             <li><a>Doctor</a></li>
-                            <li><a href = "diagnosis.html">Diagnosis</a></li>
+                            <li><a>Diagnosis</a></li>
                         </ul>
                     </li>
                     <li><a>About Us</a></li>
@@ -41,10 +41,10 @@
             <ul class="menu menu-horizontal px-1">
                 <li>
                     <details>
-                        <summary class="text-black font-bold">Appointment</summary>
+                        <summary class="text-black font-bold">Manage</summary>
                         <ul class="p-2">
                             <li><a href="{{ url_for('doctor') }}" >Doctor</a></li>
-                            <li><a href="{{ url_for('diagnosis') }}" >Diagnosis</a></li>
+                            <li><a href="{{ url_for('adminDiagnosis') }}" >Diagnosis</a></li>
                         </ul>
                     </details>
                 </li>
