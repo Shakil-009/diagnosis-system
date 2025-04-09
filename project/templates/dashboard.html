@@ -52,9 +52,10 @@
                 <li><a class="text-black font-bold" href="{{ url_for('contact') }}">Contact</a></li>
             </ul>
         </div>
-        <div class="navbar-end">
-            <a class="btn rounded-full text-white font-bold">DP</a>
+        <div id="log_in" class="navbar-end gap-2">
+            <a id="logOut" class="btn rounded-full text-black font-bold">Log out</a>
         </div>
+        <script src="{{ url_for('static', filename='js/logout.js' ) }}"></script>
     </nav>
     {% block img %}{% endblock %}
     <br>
